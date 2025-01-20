@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.InteropServices;
 
 namespace PracticaHerencia
 {
@@ -25,16 +26,25 @@ namespace PracticaHerencia
 
     class Caballo: Mamiferos 
     {
-
+        public void Galopar()
+        {
+            Console.WriteLine("Puedo galopar");
+        }
     }
 
     class Humano : Mamiferos 
     {
-
+        public void Pensar()
+        {
+            Console.WriteLine("Puedo pensar");
+        }
     }
 
     class Gorila : Mamiferos
     {
-
+        public void Trepar()
+        {
+            Console.WriteLine("Puedo trepar");
+        }
     }
 }
