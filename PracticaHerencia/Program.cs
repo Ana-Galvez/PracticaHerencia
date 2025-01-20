@@ -23,17 +23,17 @@ namespace PracticaHerencia
         }
     }
 
-    class Caballo
+    class Caballo: Mamiferos 
     {
 
     }
 
-    class Humano
+    class Humano : Mamiferos 
     {
 
     }
 
-    class Gorila
+    class Gorila : Mamiferos
     {
 
     }
