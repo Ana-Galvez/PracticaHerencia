@@ -4,5 +4,8 @@
 - Método: respirar
 - Método: cuidar crias
 1. CLASE CABALLO
-2. CLASE HUMANO
-3. CLASE GORILA
+   - Método: galopar
+3. CLASE HUMANO
+  - Método: pensar
+5. CLASE GORILA
+  - Método: trepar
