@@ -10,8 +10,6 @@ namespace PracticaHerencia
             Caballo bucefalo = new Caballo();
             Humano ana = new Humano();
             Gorila koko = new Gorila();
-
-
         }
     }
 
