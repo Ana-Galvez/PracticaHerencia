@@ -11,6 +11,7 @@ namespace PracticaHerencia
             Caballo caballo2 = new Caballo("Génitor");
             Humano humano1 = new Humano("Ana");
             Gorila gorila1 = new Gorila("Koko");
+            caballo2.GetNombre();
            
         }
     }
@@ -33,6 +34,13 @@ namespace PracticaHerencia
         {
             Console.WriteLine("Cuido de mis crías hasta que puedan valerse por sí mismas");
         }
+
+        public void GetNombre()
+        {
+            Console.WriteLine("Mi nombre es " + nombreSerVivo);
+        }
+
+
     }
 
     class Caballo: Mamiferos 
