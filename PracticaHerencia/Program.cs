@@ -7,14 +7,23 @@ namespace PracticaHerencia
     {
         static void Main(string[] args)
         {
-            Caballo bucefalo = new Caballo();
-            Humano ana = new Humano();
-            Gorila koko = new Gorila();
+            Caballo caballo1 = new Caballo("Bucéfalo");
+            Caballo caballo2 = new Caballo("Génitor");
+            Humano humano1 = new Humano("Ana");
+            Gorila gorila1 = new Gorila("Koko");
+           
         }
     }
 
     class Mamiferos
     {
+        private String nombreSerVivo;
+
+        public Mamiferos(string nombreSerVivo)
+        {
+            this.nombreSerVivo = nombreSerVivo;
+        }
+
         public void Respirar()
         {
             Console.WriteLine("Soy capaz de respirar");
@@ -28,6 +37,7 @@ namespace PracticaHerencia
 
     class Caballo: Mamiferos 
     {
+        public Caballo(String nombreCaballo) : base(nombreCaballo) { }
         public void Galopar()
         {
             Console.WriteLine("Puedo galopar");
@@ -36,6 +46,7 @@ namespace PracticaHerencia
 
     class Humano : Mamiferos 
     {
+        public Humano(String nombreHumano) : base(nombreHumano) { }
         public void Pensar()
         {
             Console.WriteLine("Puedo pensar");
@@ -44,6 +55,7 @@ namespace PracticaHerencia
 
     class Gorila : Mamiferos
     {
+        public Gorila(String nombreGorila):base(nombreGorila) { }
         public void Trepar()
         {
             Console.WriteLine("Puedo trepar");
