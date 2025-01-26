@@ -3,5 +3,5 @@
 PERO  si creamos un constructor este reemplaza al constructor por defecto y debemos usar :base() en constructor hijo
 public Caballo (parametro para igualar parametro constructor padre):base(parametro constructor padre){}
 PRINCIPIO DE SUSTITUCIÓN: "....SIEMPRE ES UN.." ej  humano es siempre un mamífero"  entonces humano hereda de mamifero
-
+MAMIFERO humano1 = new Humano("ana");   pero no va a tomar mètodos o propiedades de la calse humano, solo del padre
  */
