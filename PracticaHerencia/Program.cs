@@ -12,22 +12,24 @@ namespace PracticaHerencia
             Humano humano1 = new Humano("Ana");
             Gorila gorila1 = new Gorila("Koko");
             Mamiferos humano2 = new Humano("Tatin");
+            caballo1.Pensar();
+            humano1.Pensar();
 
-            Mamiferos[] nombresMamiferos= new Mamiferos[4];
-            nombresMamiferos[0] = caballo1;
-            nombresMamiferos[1] = caballo2;
-            nombresMamiferos[2] = humano1;
-            nombresMamiferos[3] = gorila1;
+            //Mamiferos[] nombresMamiferos= new Mamiferos[4];
+            //nombresMamiferos[0] = caballo1;
+            //nombresMamiferos[1] = caballo2;
+            //nombresMamiferos[2] = humano1;
+            //nombresMamiferos[3] = gorila1;
 
-            foreach (Mamiferos item in nombresMamiferos)
-            {
-                item.GetNombre();
-            }
+            //foreach (Mamiferos item in nombresMamiferos)
+            //{
+            //    item.GetNombre();
+            //}
 
-            Secretaria secretaria1 = new Secretaria("Carolina");
-            secretaria1.GetNombreEmpleado();
-            Empleado secretaria2 = new Secretaria("Lorena");
-            secretaria2.GetNombreEmpleado();
+            //Secretaria secretaria1 = new Secretaria("Carolina");
+            //secretaria1.GetNombreEmpleado();
+            //Empleado secretaria2 = new Secretaria("Lorena");
+            //secretaria2.GetNombreEmpleado();
             
            
         }
@@ -84,6 +86,11 @@ namespace PracticaHerencia
             Console.WriteLine("Cuido de mis crías hasta que puedan valerse por sí mismas");
         }
 
+        public void Pensar()
+        {
+            Console.WriteLine("Soy un mamífero que puede pensar");
+        }
+
         public void GetNombre()
         {
             Console.WriteLine("Mi nombre es " + nombreSerVivo);
@@ -104,9 +111,9 @@ namespace PracticaHerencia
     class Humano : Mamiferos
     {
         public Humano(String nombreHumano) : base(nombreHumano) { }
-        public void Pensar()
+        new public void Pensar()
         {
-            Console.WriteLine("Puedo pensar");
+            Console.WriteLine("Soy un humano y puedo pensar");
         }
     }
 
