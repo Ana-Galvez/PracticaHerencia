@@ -11,16 +11,18 @@ namespace PracticaHerencia
             Caballo caballo2 = new Caballo("Génitor");
             Humano humano1 = new Humano("Ana");
             Gorila gorila1 = new Gorila("Koko");
-            caballo2.GetNombre();
             Mamiferos humano2 = new Humano("Tatin");
 
-            Mamiferos[] nombresMamiferos= new Mamiferos[5];
+            Mamiferos[] nombresMamiferos= new Mamiferos[4];
             nombresMamiferos[0] = caballo1;
             nombresMamiferos[1] = caballo2;
             nombresMamiferos[2] = humano1;
             nombresMamiferos[3] = gorila1;
 
-            nombresMamiferos[0].GetNombre();
+            foreach (Mamiferos item in nombresMamiferos)
+            {
+                item.GetNombre();
+            }
 
             Secretaria secretaria1 = new Secretaria("Carolina");
             secretaria1.GetNombreEmpleado();
