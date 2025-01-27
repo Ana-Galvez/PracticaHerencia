@@ -10,4 +10,5 @@ método desde la clase hijo, el método a ejecutar es el del hijo NO el del padr
 NEW antes del mètodo hijo: solo saca la advertencia verde
 VIRTUAL antes del método padre: dice a c sharp que el método padre se va a sobreescribir en método hijos
 OVERRIDE antes del método hijo: dice a c sharp que el método hijo va a sobreescribir al método padre
+EN ARRAYS si queremos que se use el mètodo de la clase hijo se debe poner virtual y override
  */

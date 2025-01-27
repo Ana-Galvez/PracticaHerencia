@@ -17,23 +17,23 @@ namespace PracticaHerencia
             gorila1.Pensar();
             caballo2.Pensar();
 
-            //Mamiferos[] nombresMamiferos= new Mamiferos[4];
-            //nombresMamiferos[0] = caballo1;
-            //nombresMamiferos[1] = caballo2;
-            //nombresMamiferos[2] = humano1;
-            //nombresMamiferos[3] = gorila1;
+            Mamiferos[] nombresMamiferos = new Mamiferos[4];
+            nombresMamiferos[0] = caballo1;
+            nombresMamiferos[1] = caballo2;
+            nombresMamiferos[2] = humano1;
+            nombresMamiferos[3] = gorila1;
 
-            //foreach (Mamiferos item in nombresMamiferos)
-            //{
-            //    item.GetNombre();
-            //}
+            foreach (Mamiferos item in nombresMamiferos)
+            {
+                item.Pensar();
+            }
 
             //Secretaria secretaria1 = new Secretaria("Carolina");
             //secretaria1.GetNombreEmpleado();
             //Empleado secretaria2 = new Secretaria("Lorena");
             //secretaria2.GetNombreEmpleado();
-            
-           
+
+
         }
     }
 
