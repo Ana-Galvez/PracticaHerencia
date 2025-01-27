@@ -8,4 +8,6 @@ POLIMORFISMO: MUCHAS FORMAS
 1- Cuando en la clase padre y en la clase hijo tienen el mismo nombre y parámetros de un método, en principio al llamar a
 método desde la clase hijo, el método a ejecutar es el del hijo NO el del padre
 NEW antes del mètodo hijo: solo saca la advertencia verde
+VIRTUAL antes del método padre: dice a c sharp que el método padre se va a sobreescribir en método hijos
+OVERRIDE antes del método hijo: dice a c sharp que el método hijo va a sobreescribir al método padre
  */

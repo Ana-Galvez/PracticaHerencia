@@ -14,6 +14,8 @@ namespace PracticaHerencia
             Mamiferos humano2 = new Humano("Tatin");
             caballo1.Pensar();
             humano1.Pensar();
+            gorila1.Pensar();
+            caballo2.Pensar();
 
             //Mamiferos[] nombresMamiferos= new Mamiferos[4];
             //nombresMamiferos[0] = caballo1;
@@ -86,7 +88,7 @@ namespace PracticaHerencia
             Console.WriteLine("Cuido de mis crías hasta que puedan valerse por sí mismas");
         }
 
-        public void Pensar()
+        public virtual void Pensar()
         {
             Console.WriteLine("Soy un mamífero que puede pensar");
         }
@@ -111,7 +113,7 @@ namespace PracticaHerencia
     class Humano : Mamiferos
     {
         public Humano(String nombreHumano) : base(nombreHumano) { }
-        new public void Pensar()
+       new public void Pensar()
         {
             Console.WriteLine("Soy un humano y puedo pensar");
         }
@@ -123,6 +125,11 @@ namespace PracticaHerencia
         public void Trepar()
         {
             Console.WriteLine("Puedo trepar");
+        }
+
+        public override void Pensar()
+        {
+            Console.WriteLine("Soy un gorila que piensa");
         }
     }
 }
