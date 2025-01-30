@@ -11,4 +11,6 @@ NEW antes del mètodo hijo: solo saca la advertencia verde
 VIRTUAL antes del método padre: dice a c sharp que el método padre se va a sobreescribir en método hijos
 OVERRIDE antes del método hijo: dice a c sharp que el método hijo va a sobreescribir al método padre
 EN ARRAYS si queremos que se use el mètodo de la clase hijo se debe poner virtual y override
+MODIFICADORES DE ACCESO: public, private, static, protected(solo se accede en la misma clase y en las clases donde se herede,
+generalmente su usa ese método dentro de otro método de una clase donde se hereda)
  */

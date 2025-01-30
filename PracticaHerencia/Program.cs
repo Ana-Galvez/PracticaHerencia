@@ -16,6 +16,7 @@ namespace PracticaHerencia
             humano1.Pensar();
             gorila1.Pensar();
             caballo2.Pensar();
+            caballo1.Galopar();
 
             Mamiferos[] nombresMamiferos = new Mamiferos[4];
             nombresMamiferos[0] = caballo1;
@@ -28,10 +29,10 @@ namespace PracticaHerencia
                 item.Pensar();
             }
 
-            //Secretaria secretaria1 = new Secretaria("Carolina");
-            //secretaria1.GetNombreEmpleado();
-            //Empleado secretaria2 = new Secretaria("Lorena");
-            //secretaria2.GetNombreEmpleado();
+            Secretaria secretaria1 = new Secretaria("Carolina");
+            secretaria1.GetNombreEmpleado();
+            Empleado secretaria2 = new Secretaria("Lorena");
+            secretaria2.GetNombreEmpleado();
 
 
         }
@@ -78,7 +79,7 @@ namespace PracticaHerencia
             this.nombreSerVivo = nombreSerVivo;
         }
 
-        public void Respirar()
+        protected void Respirar()
         {
             Console.WriteLine("Soy capaz de respirar");
         }
@@ -107,7 +108,10 @@ namespace PracticaHerencia
         public void Galopar()
         {
             Console.WriteLine("Puedo galopar");
+            Respirar();
         }
+
+        
     }
 
     class Humano : Mamiferos
